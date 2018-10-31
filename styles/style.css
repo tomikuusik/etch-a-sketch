@@ -1,0 +1,16 @@
+#maindiv {
+    background-color: gray;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+#maindiv div {
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    transition: 2s ease-in;
+}
+#maindiv div:hover {
+    background-color: blue;
+    transition: initial;
