@@ -1,16 +1,38 @@
 #maindiv {
-    background-color: gray;
     display: inline-flex;
     flex-wrap: wrap;
     width: 800px;
+    background-color: whitesmoke;
 }
-#maindiv div {
-    background-color: red;
-    height: 40px;
-    width: 40px;
-    margin: 5px;
+#mainDiv div {
+    background-color: gainsboro;
     transition: 2s ease-in;
 }
-#maindiv div:hover {
+#mainDiv div:hover {
     background-color: blue;
     transition: initial;
+}
+#resetButton {
+    width: 350px;
+    height: 50px;
+    margin: 10px;
+}
+#submitSpan {
+    display: inline-flex;
+    justify-content: center;
+    background-color: gainsboro;
+}
+#centerDiv {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+    align-self: center;
+    background-color: gainsboro;
+}
+#squareSpan {
+    display: inline-flex;
+}
+#mainCenter {
+    display: flex;
+    justify-content: center;
+}
