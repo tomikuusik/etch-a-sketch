@@ -22,10 +22,14 @@ $("#centerDiv").hover(
         var y = Math.floor(Math.random() * 256);
         var z = Math.floor(Math.random() * 256);
         var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-        $("#mainDiv div").hover(function () { 
-            $(this).css("background-color", bgColor);
-        }, function () {
-            $(this).css("background-color", "gainsboro");
-        });
+        if (document.querySelector(".switch input").checked) {
+            document.querySelector(".slider").style.backgroundColor = bgColor;
+            $("#mainDiv div").hover(function () { 
+                $(this).css("background-color", bgColor);
+            }, function () {
+                $(this).css("background-color", "gainsboro");
+            }
+            )
+        }
     }
-);
+)

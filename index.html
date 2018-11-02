@@ -9,11 +9,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="mainCenter">
-        <div id="centerDiv">
-            <span id="submitSpan"><button type="submit" id="resetButton">RESET</button></span>
-            <span id="squareSpan"><div id="maindiv"></div></span>
+    <div id="centerDiv">
+        <div id="topBar">
+            <span id="submitBox">
+                <button type="submit" id="resetButton">RESET</button>
+            </span>
+            <span id="switchBox">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </span>
         </div>
+        <div id="mainDiv"></div>
     </div>
 </body>
 <script src="javascript.js"></script>
